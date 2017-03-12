@@ -15,7 +15,6 @@ class TForm2 : public TForm
 __published:	// IDE-managed Components
 	TSpeedButton *SpeedButton2;
 	TSpeedButton *SpeedButton3;
-	TLabel *Label1;
 	TLabel *Label4;
 	TImage *Image1;
 	TSpeedButton *SpeedButton1;

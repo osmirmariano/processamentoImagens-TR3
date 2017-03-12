@@ -2,8 +2,8 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Opera'#231#227'o Aritim'#233'trica'
-  ClientHeight = 720
-  ClientWidth = 792
+  ClientHeight = 478
+  ClientWidth = 1010
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,9 +14,9 @@ object Form2: TForm2
   PixelsPerInch = 96
   TextHeight = 13
   object SpeedButton2: TSpeedButton
-    Left = 622
-    Top = 216
-    Width = 162
+    Left = 754
+    Top = 17
+    Width = 121
     Height = 41
     Caption = 'Adi'#231#227'o'
     Font.Charset = DEFAULT_CHARSET
@@ -85,10 +85,10 @@ object Form2: TForm2
     OnClick = SpeedButton2Click
   end
   object SpeedButton3: TSpeedButton
-    Left = 622
-    Top = 279
-    Width = 162
-    Height = 40
+    Left = 881
+    Top = 17
+    Width = 121
+    Height = 41
     Caption = 'Mutiplica'#231#227'o'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -154,22 +154,9 @@ object Form2: TForm2
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
     ParentFont = False
   end
-  object Label1: TLabel
-    Left = 628
-    Top = 175
-    Width = 152
-    Height = 18
-    Caption = 'Opera'#231#245'es Aritim'#233'tricas'
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clHotLight
-    Font.Height = -15
-    Font.Name = 'Tahoma'
-    Font.Style = []
-    ParentFont = False
-  end
   object Label4: TLabel
-    Left = 120
-    Top = 8
+    Left = 44
+    Top = 29
     Width = 543
     Height = 29
     Caption = 'Opera'#231#245'es Aritm'#233'ticas e Geom'#233'tricas em Imagens'
@@ -184,14 +171,14 @@ object Form2: TForm2
   end
   object Image1: TImage
     Left = 8
-    Top = 80
+    Top = 128
     Width = 300
     Height = 300
   end
   object SpeedButton1: TSpeedButton
-    Left = 622
-    Top = 120
-    Width = 162
+    Left = 627
+    Top = 17
+    Width = 121
     Height = 41
     Caption = 'Imagens'
     Font.Charset = DEFAULT_CHARSET
@@ -261,22 +248,22 @@ object Form2: TForm2
   end
   object Image2: TImage
     Left = 312
-    Top = 80
+    Top = 128
     Width = 300
     Height = 300
   end
   object Image3: TImage
-    Left = 248
-    Top = 412
+    Left = 672
+    Top = 128
     Width = 300
     Height = 300
   end
   object Label2: TLabel
-    Left = 160
-    Top = 412
-    Width = 69
+    Left = 634
+    Top = 255
+    Width = 12
     Height = 19
-    Caption = 'Resultado'
+    Caption = '='
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16

@@ -34,12 +34,12 @@ void __fastcall TForm2::SpeedButton1Click(TObject *Sender)
 //---------------------------------------------------------------------------
 void __fastcall TForm2::SpeedButton2Click(TObject *Sender)
 {
-	int x, y, a;
-	Graphics::TBitmap *adicao = new Graphics::TBitmap;
-//	adicao->LoadFromFile("cg.bmp");
+	int x, y, a, b;
 	for(x = 0; x < Image1->Width; x++){
 		for(y = 0; y < Image1->Height; y++){
-			//Image3->Canvas->Pixels[Image1->Canvas->Pixels[x]+Image2->Canvas->Pixels[x]];
+			a = Image1->Canvas->Pixels[x][y];
+			b = Image2->Canvas->Pixels[x][y];
+			Image3->Canvas->Pixels[x][y] = a+b/2;
 		}
 	}
 
