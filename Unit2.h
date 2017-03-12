@@ -21,7 +21,6 @@ __published:	// IDE-managed Components
 	TImage *Image2;
 	TImage *Image3;
 	TLabel *Label2;
-	TSpeedButton *SpeedButton4;
 	void __fastcall SpeedButton1Click(TObject *Sender);
 	void __fastcall SpeedButton2Click(TObject *Sender);
 	void __fastcall SpeedButton3Click(TObject *Sender);

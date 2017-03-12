@@ -1,9 +1,10 @@
 object Form2: TForm2
   Left = 0
   Top = 0
-  Caption = 'Opera'#231#227'o Aritim'#233'trica'
-  ClientHeight = 478
-  ClientWidth = 1010
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Opera'#231#227'o Aritim'#233'tica'
+  ClientHeight = 446
+  ClientWidth = 1019
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -11,11 +12,12 @@ object Form2: TForm2
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object SpeedButton2: TSpeedButton
-    Left = 754
-    Top = 41
+    Left = 763
+    Top = 20
     Width = 121
     Height = 41
     Caption = 'Adi'#231#227'o'
@@ -85,8 +87,8 @@ object Form2: TForm2
     OnClick = SpeedButton2Click
   end
   object SpeedButton3: TSpeedButton
-    Left = 881
-    Top = 41
+    Left = 890
+    Top = 20
     Width = 121
     Height = 41
     Caption = 'Mutiplica'#231#227'o'
@@ -156,11 +158,11 @@ object Form2: TForm2
     OnClick = SpeedButton3Click
   end
   object Label4: TLabel
-    Left = 44
-    Top = 29
-    Width = 543
+    Left = 100
+    Top = 32
+    Width = 382
     Height = 29
-    Caption = 'Opera'#231#245'es Aritm'#233'ticas e Geom'#233'tricas em Imagens'
+    Caption = 'Opera'#231#245'es Aritm'#233'ticas em Imagens'
     Color = clSilver
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clHotLight
@@ -172,13 +174,13 @@ object Form2: TForm2
   end
   object Image1: TImage
     Left = 8
-    Top = 128
+    Top = 99
     Width = 300
     Height = 300
   end
   object SpeedButton1: TSpeedButton
-    Left = 627
-    Top = 41
+    Left = 619
+    Top = 20
     Width = 121
     Height = 41
     Caption = 'Imagens'
@@ -248,35 +250,28 @@ object Form2: TForm2
     OnClick = SpeedButton1Click
   end
   object Image2: TImage
-    Left = 312
-    Top = 128
+    Left = 320
+    Top = 99
     Width = 300
     Height = 300
   end
   object Image3: TImage
-    Left = 672
-    Top = 128
+    Left = 664
+    Top = 99
     Width = 300
     Height = 300
   end
   object Label2: TLabel
     Left = 634
-    Top = 255
-    Width = 12
-    Height = 19
+    Top = 226
+    Width = 15
+    Height = 25
     Caption = '='
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -16
+    Font.Height = -21
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-  end
-  object SpeedButton4: TSpeedButton
-    Left = 881
-    Top = 88
-    Width = 70
-    Height = 34
-    Caption = 'Clear'
   end
 end

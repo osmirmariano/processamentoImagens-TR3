@@ -1,6 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'Opera'#231#245'es Aritm'#233'tica e Geom'#233'tricas com Imagens'
   ClientHeight = 459
   ClientWidth = 683
@@ -11,6 +12,7 @@ object Form1: TForm1
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
+  Position = poMainFormCenter
   PixelsPerInch = 96
   TextHeight = 13
   object SpeedButton1: TSpeedButton
@@ -91,9 +93,9 @@ object Form1: TForm1
     Height = 350
   end
   object Label1: TLabel
-    Left = 513
+    Left = 507
     Top = 287
-    Width = 145
+    Width = 146
     Height = 18
     Caption = 'Opera'#231#245'es Aritm'#233'ticas'
     Font.Charset = DEFAULT_CHARSET
@@ -102,11 +104,12 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
+    Layout = tlCenter
   end
   object Label2: TLabel
     Left = 497
     Top = 175
-    Width = 162
+    Width = 156
     Height = 18
     Caption = 'Opera'#231#245'es Geom'#233'tricas'
     Font.Charset = DEFAULT_CHARSET
@@ -135,6 +138,12 @@ object Form1: TForm1
     Width = 161
     Height = 41
     Caption = 'Adi'#231#227'o e Multiplica'#231#227'o'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
     OnClick = SpeedButton4Click
   end
   object Label4: TLabel
