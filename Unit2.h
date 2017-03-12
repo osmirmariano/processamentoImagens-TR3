@@ -15,17 +15,18 @@ class TForm2 : public TForm
 __published:	// IDE-managed Components
 	TSpeedButton *SpeedButton2;
 	TSpeedButton *SpeedButton3;
-	TLabel *Label1;
 	TLabel *Label4;
 	TImage *Image1;
 	TSpeedButton *SpeedButton1;
 	TImage *Image2;
 	TImage *Image3;
 	TLabel *Label2;
+	TSpeedButton *SpeedButton4;
 	void __fastcall SpeedButton1Click(TObject *Sender);
 	void __fastcall SpeedButton2Click(TObject *Sender);
+	void __fastcall SpeedButton3Click(TObject *Sender);
 private:	// User declarations
-    TColor cor;
+
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);
 };

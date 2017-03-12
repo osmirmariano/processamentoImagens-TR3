@@ -15,7 +15,7 @@ object Form2: TForm2
   TextHeight = 13
   object SpeedButton2: TSpeedButton
     Left = 754
-    Top = 17
+    Top = 41
     Width = 121
     Height = 41
     Caption = 'Adi'#231#227'o'
@@ -86,7 +86,7 @@ object Form2: TForm2
   end
   object SpeedButton3: TSpeedButton
     Left = 881
-    Top = 17
+    Top = 41
     Width = 121
     Height = 41
     Caption = 'Mutiplica'#231#227'o'
@@ -153,6 +153,7 @@ object Form2: TForm2
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF}
     ParentFont = False
+    OnClick = SpeedButton3Click
   end
   object Label4: TLabel
     Left = 44
@@ -177,7 +178,7 @@ object Form2: TForm2
   end
   object SpeedButton1: TSpeedButton
     Left = 627
-    Top = 17
+    Top = 41
     Width = 121
     Height = 41
     Caption = 'Imagens'
@@ -261,12 +262,12 @@ object Form2: TForm2
   object Label2: TLabel
     Left = 634
     Top = 255
-    Width = 12
-    Height = 19
+    Width = 15
+    Height = 25
     Caption = '='
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -16
+    Font.Height = -21
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
