@@ -1,0 +1,72 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#include <jpeg.hpp>
+#pragma hdrstop
+#include "operacoesImagens.h"
+#include "Unit2.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+	Form1->Color =  clWhite;
+	ComboBox1->Items->Add("VERTICAL");
+	ComboBox1->Items->Add("HORIZONTAL");
+	ComboBox1->Enabled = false;
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SpeedButton1Click(TObject *Sender)
+{
+	Image1->Picture->LoadFromFile("cg.bmp"); // Carregando imagem
+	Image1->Stretch = true; //redimensiona
+	Image1->Refresh(); //atualiza
+	ComboBox1->Enabled = true;
+
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::ComboBox1Change(TObject *Sender)
+{
+	AnsiString teste;
+	teste = ComboBox1->Text;
+	if(teste == "VERTICAL"){
+		Graphics::TBitmap *vertical = new Graphics::TBitmap;
+		vertical->LoadFromFile("cg.bmp");
+		vertical->Height += vertical->Height;
+		vertical->Width += vertical->Width;
+
+		 for (int y = 0; y < Image1->Height; y++) {
+			for (int x = 0; x < Image1->Width; x++) {
+				vertical->Canvas->Pixels[Image1->Width-x][y+Image1->Height] = Image1->Canvas->Pixels[Image1->Width-x][Image1->Height-y];
+			}
+		 }
+		Image1->Picture->Bitmap = vertical;
+		delete vertical;
+
+	}
+	else{
+		if(teste == "HORIZONTAL"){
+			Graphics::TBitmap *horizontal = new Graphics::TBitmap;
+			horizontal->LoadFromFile("cg.bmp");
+			horizontal->Height += horizontal->Height;
+			horizontal->Width += horizontal->Width;
+
+			  for (int y = 0; y < Image1->Height; y++) {
+				for (int x = 0; x < Image1->Width; x++) {
+					horizontal->Canvas->Pixels[x+Image1->Width][Image1->Height-y] = Image1->Canvas->Pixels[Image1->Width-x][Image1->Height-y];
+				}
+			 }
+			 Image1->Picture->Bitmap = horizontal;
+			 delete horizontal;
+		}
+	}
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::SpeedButton4Click(TObject *Sender)
+{
+	  Form2->Show();
+}
+//---------------------------------------------------------------------------
