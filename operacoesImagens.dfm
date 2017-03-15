@@ -137,7 +137,7 @@ object Form1: TForm1
     Top = 319
     Width = 161
     Height = 41
-    Caption = 'Adi'#231#227'o e Multiplica'#231#227'o'
+    Caption = 'Adi'#231#227'o e Subtra'#231#227'o'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = 16

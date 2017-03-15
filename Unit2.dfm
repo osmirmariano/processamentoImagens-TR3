@@ -91,7 +91,7 @@ object Form2: TForm2
     Top = 20
     Width = 121
     Height = 41
-    Caption = 'Mutiplica'#231#227'o'
+    Caption = 'Subtra'#231#227'o'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = 16

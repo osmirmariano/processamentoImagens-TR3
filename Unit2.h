@@ -25,7 +25,7 @@ __published:	// IDE-managed Components
 	void __fastcall SpeedButton2Click(TObject *Sender);
 	void __fastcall SpeedButton3Click(TObject *Sender);
 private:	// User declarations
-	//TColor cor1, cor2;
+	TColor cor1, cor2;
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);
 };
