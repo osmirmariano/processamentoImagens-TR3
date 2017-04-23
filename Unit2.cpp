@@ -53,7 +53,7 @@ void __fastcall TForm2::SpeedButton2Click(TObject *Sender)
 
 			o =  ((a+d)/2);
 			s =  ((b+e)/2);
-			t =  ((c+e)/2);
+			t =  ((c+e)/2);//
 
 			Image3->Canvas->Pixels[x][y] = RGB(o,s,t);
 			//a = Image1->Canvas->Pixels[x][y];
